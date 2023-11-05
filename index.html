@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Your Library!</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <script src="script.js" defer></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class='header'>
+    <h2>Library</h2>
+    <p class='add-book'>Add Book +</p>
+  </div>
+  <div class='shelf'></div>
+  <dialog>
+    <p>Fill the form to add a book to the library!</p>
+    <form action="" id='form'>
+      <label for="title">Title</label>
+      <input type="text" id="title" name="title" required autofocus>
+      <label for="author">Author</label>
+      <input type="text" id="author" name="author" required>
+      <label for="pages">Number of pages</label>
+      <input type="number" id="pages" name="pages" required>
+      <fieldset>
+        <legend>Read status</legend>
+        <input type="radio" id="read" name="read" value="read" required>
+        <label for="read">Already read!</label>
+        <input type="radio" id="not-read" name="read" value="not-read" required>
+        <label for="not-read">Haven't read this one yet...</label>
+      </fieldset>
+      <button class='sub-book'>Add Book</button>
+      <button type="button" class="cancel">Cancel</button>  
+    </form>
+  </dialog>
+</body>
+
+</html>

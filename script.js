@@ -90,3 +90,11 @@ document.addEventListener('click', (e) => {
         statusEl[data].textContent = myLibrary[data].status;
     } else return;
 })
+
+document.addEventListener('click', (e) => {
+    if (e.target.hasAttribute('data-remove')) {
+        let data = parseInt(e.target.getAttribute('data-remove'));
+        let card = document.querySelectorAll('.book-card');
+        card[data].style = 'display: none';
+    } else return;
+})

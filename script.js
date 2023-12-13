@@ -6,11 +6,13 @@ let cancel = document.querySelector('.cancel');
 
 const myLibrary = [];
 
-function createBook(title, author, pages, status) {
-    this.title = title;
-    this.author = author;
-    this.pages = pages;
-    this.status = status;
+class createBook {
+    constructor(title, author, pages, status) {
+        this.title = title;
+        this.author = author;
+        this.pages = pages;
+        this.status = status;
+    }
 }
 
 function pushBook(obj) {
